@@ -24,18 +24,16 @@ Pytest ile modelin ve çıktıların varlığını/performansını doğrular.
 Test raporu reports/pytest.xml içine kaydedilir.
 
 # Kullanım
-# Sanal ortamı aktif et
-source iris-venv/Scripts/activate
-
-# Gereken paketleri yükle
+- Gereken paketleri yükle
 pip install -r requirements.txt
 
-# Pipeline'ı çalıştır
+- Pipeline'ı çalıştır
 dvc repro
 
-# Metrikleri görüntüle
+- Metrikleri görüntüle
 dvc metrics show
 
-# Testleri çalıştır
+- Testleri çalıştır
 pytest -q tests/
+
 
