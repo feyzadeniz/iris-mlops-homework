@@ -3,7 +3,7 @@
 Bu proje, Iris veri seti üzerinde uçtan uca bir MLOps pipeline örneğidir.
 DVC ile veri ve işlem takibi, scikit-learn ile model eğitimi, pytest ile test süreçleri otomatikleştirilmiştir.
 
-🚀 Pipeline Aşamaları
+# 🚀 Pipeline Aşamaları
 
 Download Data → src/download_data.py
 
@@ -22,4 +22,20 @@ Test Model → tests/test_model.py
 Pytest ile modelin ve çıktıların varlığını/performansını doğrular.
 
 Test raporu reports/pytest.xml içine kaydedilir.
+
+# Kullanım
+# Sanal ortamı aktif et
+source iris-venv/Scripts/activate
+
+# Gereken paketleri yükle
+pip install -r requirements.txt
+
+# Pipeline'ı çalıştır
+dvc repro
+
+# Metrikleri görüntüle
+dvc metrics show
+
+# Testleri çalıştır
+pytest -q tests/
 
