@@ -22,6 +22,6 @@ def main():
     df.to_csv(OUT, index=False, encoding="utf-8")
     print(f"Veri temizlendi ve kaydedildi: {OUT} (shape={df.shape})")
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
 

@@ -4,3 +4,5 @@ numpy
 matplotlib
 seaborn
 dvc
+joblib
+pytest
